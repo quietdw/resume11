@@ -1,4 +1,7 @@
-*{font-family: 'microsoft yahei'}
+*{font-family: 
+    'microsoft yahei';
+    background:black;
+}
 body{
     margin: 0;
 }
