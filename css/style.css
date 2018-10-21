@@ -113,7 +113,7 @@ a{
     display: inline-block;
     background: #e6686a;
     color: #fff;
-    padding: 4px 16px;
+    padding: 6px 16px;
     position: relative;
 }
 .userCard .text span::after{
