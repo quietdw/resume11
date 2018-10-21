@@ -25,7 +25,7 @@ a{
 }
 
 .topNavBar .topNavBarInner{
-    padding: 0 16px 0 16px; 
+    padding: 7px 16px 1px 16px; 
 }
 
 .topNavBar nav>ul{
@@ -44,7 +44,7 @@ a{
 }
 
 .topNavBar nav>ul>li{
-    margin: 0 16px;
+    margin: 0 17px;
     float: left;
 }
 
