@@ -105,7 +105,7 @@ a{
     float: left;
 }
 .userCard .text{
-    float: right;
+    float: left;
     width: 470px;
     margin-left: 65px;
 }
@@ -130,6 +130,7 @@ a{
 }
 .userCard .text hr{
     margin: 22px 0;
+    border: 0;
     border-top: 1px solid #DEDEDE;
 }
 .userCard .text dt,dd{
