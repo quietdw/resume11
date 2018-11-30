@@ -23,20 +23,35 @@
       Loading……
     </div>
   </div>
-  <div class="topNavBar">
+  <div id="topNavBar">
     <div class="topNavBarInner clearfix">
       <a class="logo" href="#" alt="logo">
         <span class="rs">J</span><span class="card">iang</span>
       </a>
       <nav>
         <ul class="clearfix">
-          <li><a href="#">关于</a></li>
-          <li><a href="#">技能</a></li>
-          <li><a href="#">作品</a></li>
-          <li><a href="#">博客</a></li>
-          <li><a href="#">日历</a></li>
-          <li><a href="#">联系方式</a></li>
-          <li><a href="#">其他</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Skills</a></li>
+          <li>
+            <a class='menuTigger' href="#">Portfolio</a>
+            <ul class='submenu'>
+              <li><a href="">Portfolio1Portfolio1</a></li>
+              <li><a href="">Portfolio2</a></li>
+              <li><a href="">Portfolio3</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class='menuTigger' href="http://jiangnana.fun">Blog</a>
+            <ul class='submenu'>
+                <li><a href="">Blog1Blog1</a></li>
+                <li><a href="">Blog2</a></li>
+                <li><a href="">Blog3</a></li>
+              </ul>
+            </li>
+          </li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Phone</a></li>
+          <li><a href="#">Other</a></li>
         </ul>
       </nav>
     </div>
@@ -140,11 +155,7 @@
   <br>
   <br>
 
-<script>
-window.onload= function(){
-  loadingContainer.classList.remove('active')
-}
-</script>
+<script src="js/main.js"></script>
 </body>
 
 </html>
