@@ -35,6 +35,14 @@ a {
     clear: both;
 }
 
+#siteAbout,#siteSkills,#sitePortfolio{
+    transform: translateY(-50px);
+    transition: all 0.5s;
+}
+#siteAbout.slideUp,#siteSkills.slideUp,#sitePortfolio.slideUp{
+    transform: translateY(0px);
+}
+
 /* topNavBar */
 #topNavBar .logo {
     float: left;
@@ -107,7 +115,7 @@ a {
 
 }
 
-#topNavBar nav>ul>li::after {
+#topNavBar nav>ul>li::after,#topNavBar nav>ul>li.highLight::after {
     content: '';
     display: block;
     position: absolute;
@@ -118,7 +126,7 @@ a {
     transition: all ease-out 0.3s;
 }
 
-#topNavBar nav>ul>li.active::after {
+#topNavBar nav>ul>li.active::after ,#topNavBar nav>ul>li.highLight::after{
     width: 100%;
 }
 
@@ -334,6 +342,14 @@ dd {
     padding: 20px 15px;
 }
 
+.skills ol li .progress{
+    transition: all 0.5s;
+    transform: translateX(0px)
+}
+.skills.slideUp ol li .progress{
+    transform: translateX(-100%)
+}
+
 .skills ol .progress,
 ol .progressBar {
     border-radius: 2px;
@@ -346,6 +362,7 @@ ol .progressBar {
 
 .skills ol .progressBar {
     background: #FBE0E1;
+    overflow: hidden;
     height: 5px;
 }
 
