@@ -315,7 +315,7 @@ dd {
 
 .skills,
 .portfolio {
-    max-width: 940px;
+    max-width: 740px;
     margin: 0 auto;
     margin-top: 70px;
 }
@@ -370,4 +370,32 @@ ol .progressBar {
     height: 100%;
     background: #e8676b;
 
+}
+
+.portfolio{
+
+}
+
+
+.portfolio .swiper-container{
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+.portfolio .swiper-button-next,.portfolio .swiper-button-prev{
+    width: 30px;
+    height:30px;
+    padding: 5px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    top:calc(50% -9px);
+}
+.portfolio .swiper-button-next svg,.portfolio .swiper-button-prev svg{
+    width: 30px;
+    height: 30px;
+}
+.portfolio .swiper-button-next:focus,.portfolio .swiper-button-prev:focus{
+    outline: none;
+}
+.portfolio .swiper-wrapper .swiper-slide img{
+    width: 100%;
 }

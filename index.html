@@ -3,9 +3,10 @@
 
 <head>
   <title>姜大伟的个人简历</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
   <link rel="stylesheet" href="css/loading.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="//at.alicdn.com/t/font_882652_8ap4zxcdfex.js"></script>
+  <script src="//at.alicdn.com/t/font_882652_k7i5wzltj7.js"></script>
   <style type="text/css">
     .icon {
       width: 1em;
@@ -13,6 +14,12 @@
       vertical-align: -0.15em;
       fill: currentColor;
       overflow: hidden;
+    }
+  </style>
+  <style>
+    .swiper-container {
+      width: 600px;
+      height: 300px;
     }
   </style>
 </head>
@@ -144,38 +151,57 @@
   </section>
   <section id="sitePortfolio" class="portfolio">
     <h2>作品集</h2>
-    <p>我是案例我是作品</p>
-    <p>我是案例我是作品</p>
-    <p>我是案例我是作品</p>
-    <p>我是案例我是作品</p>
-    <p>我是案例我是作品</p>
-    <p>我是案例我是作品</p>
-    <p>我是案例我是作品</p>
-    <p>我是案例我是作品</p>
-    <p>我是案例我是作品</p>
-    <p>我是案例我是作品</p>
-    <p>我是案例我是作品</p>
-    <p>我是案例我是作品</p>
-    <p>我是案例我是作品</p>
-    <p>我是案例我是作品</p>
-    <p>我是案例我是作品</p>
-    <p>我是案例我是作品</p>
-    <p>我是案例我是作品</p>
-    <p>我是案例我是作品</p>
-    <p>我是案例我是作品</p>
-    <p>我是案例我是作品</p>
-    <p>我是案例我是作品</p>
-    <p>我是案例我是作品</p>
-    <p>我是案例我是作品</p>
-    <p>我是案例我是作品</p>
-    <p>我是案例我是作品</p>
-    <p>我是案例我是作品</p>
-    <p>我是案例我是作品</p>
-    <p>我是案例我是作品</p>
+    <div style="position:relative">
+      <!-- Slider main container -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/bookmark.png" alt="bookmark"></div>
+          <div class="swiper-slide"><img src="img/painting.jpg" alt="painting"></div>
+          <div class="swiper-slide"><img src="img/slide.png" alt="slide"></div>
+        </div>
+      </div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-previous"></use>
+        </svg>
+      </div>
+      <div class="swiper-button-next">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-next"></use>
+        </svg>
+      </div>
+    </div>
   </section>
 
   <script src="js/tween.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+  <script>
+    var mySwiper = new Swiper('.swiper-container', {
+      // Optional parameters
+      // direction: 'vertical',
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        // el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    })
+  </script>
 </body>
 
 </html>
