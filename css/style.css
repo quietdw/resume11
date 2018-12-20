@@ -35,15 +35,27 @@ a {
     clear: both;
 }
 
-#siteAbout,#siteSkills,#sitePortfolio{
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+#siteAbout,
+#siteSkills,
+#sitePortfolio {
     transform: translateY(-50px);
     transition: all 0.5s;
 }
-#siteAbout.slideUp,#siteSkills.slideUp,#sitePortfolio.slideUp{
+
+#siteAbout.slideUp,
+#siteSkills.slideUp,
+#sitePortfolio.slideUp {
     transform: translateY(0px);
 }
 
-/* topNavBar */
 #topNavBar .logo {
     float: left;
     font-size: 24px;
@@ -99,11 +111,6 @@ a {
     transition: padding 0.5s;
 }
 
-#topNavBar nav>ul>li {
-    margin: 0 17px;
-    float: left;
-}
-
 #topNavBar nav>ul {
     list-style: none;
     margin: 0;
@@ -111,11 +118,13 @@ a {
 }
 
 #topNavBar nav>ul>li {
+    margin: 0 17px;
+    float: left;
     position: relative;
-
 }
 
-#topNavBar nav>ul>li::after,#topNavBar nav>ul>li.highLight::after {
+#topNavBar nav>ul>li::after,
+#topNavBar nav>ul>li.highLight::after {
     content: '';
     display: block;
     position: absolute;
@@ -126,7 +135,8 @@ a {
     transition: all ease-out 0.3s;
 }
 
-#topNavBar nav>ul>li.active::after ,#topNavBar nav>ul>li.highLight::after{
+#topNavBar nav>ul>li.active::after,
+#topNavBar nav>ul>li.highLight::after {
     width: 100%;
 }
 
@@ -138,7 +148,7 @@ a {
     margin-right: 100%;
     visibility: hidden;
     text-align: right;
-    color:  #3d4451;
+    color: #3d4451;
     background: #fff;
     border-radius: 1px;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
@@ -167,7 +177,6 @@ a {
     background: rgb(250, 250, 250);
 }
 
-/* banner */
 .banner {
     background-image: url(../img/bg.jpg);
     background-position: center center;
@@ -179,7 +188,6 @@ a {
     background-color: rgba(0, 0, 0, 0.65);
 }
 
-/* main */
 .userCard {
     max-width: 940px;
     margin: 0 auto;
@@ -284,7 +292,6 @@ dd {
     width: 25px;
     height: 25px;
     fill: #ffffff;
-
 }
 
 .downloadResume-wapper {
@@ -310,8 +317,6 @@ dd {
     line-height: 1.8;
     font-size: 18px;
 }
-
-/* skliis */
 
 .skills,
 .portfolio {
@@ -342,11 +347,12 @@ dd {
     padding: 20px 15px;
 }
 
-.skills ol li .progress{
+.skills ol li .progress {
     transition: all 0.5s;
     transform: translateX(0px)
 }
-.skills.slideUp ol li .progress{
+
+.skills.slideUp ol li .progress {
     transform: translateX(-100%)
 }
 
@@ -369,33 +375,40 @@ ol .progressBar {
 .skills ol .progress {
     height: 100%;
     background: #e8676b;
-
 }
 
-.portfolio{
-
+.portfolio #slide-container{
+    position:relative;
 }
 
-
-.portfolio .swiper-container{
+.portfolio .swiper-container {
+    width: 600px;
+    height: 300px;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
-.portfolio .swiper-button-next,.portfolio .swiper-button-prev{
+
+.portfolio .swiper-button-next,
+.portfolio .swiper-button-prev {
     width: 30px;
-    height:30px;
+    height: 30px;
     padding: 5px;
     border-radius: 50%;
     background: #fff;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
-    top:calc(50% -9px);
+    top: calc(50% -9px);
 }
-.portfolio .swiper-button-next svg,.portfolio .swiper-button-prev svg{
+
+.portfolio .swiper-button-next svg,
+.portfolio .swiper-button-prev svg {
     width: 30px;
     height: 30px;
 }
-.portfolio .swiper-button-next:focus,.portfolio .swiper-button-prev:focus{
+
+.portfolio .swiper-button-next:focus,
+.portfolio .swiper-button-prev:focus {
     outline: none;
 }
-.portfolio .swiper-wrapper .swiper-slide img{
+
+.portfolio .swiper-wrapper .swiper-slide img {
     width: 100%;
 }
