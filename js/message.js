@@ -1,5 +1,13 @@
 !function () {
     let model = {
+        init:function(){
+            var APP_ID = 'KMOXV4q9U0oDj41GjcqDuFe0-gzGzoHsz'
+            var APP_KEY = 'vt42FiDltVxEsHYopyyLvLDj'
+            AV.init({
+                appId: APP_ID,
+                appKey: APP_KEY
+            })
+        },
         fetch:function(){
              var query = new AV.Query('Message')
              return query.find()
@@ -19,21 +27,12 @@
         leaveMessage:null,
         messageList:null,
         model:null,
-        initAV:function(){
-            var APP_ID = 'KMOXV4q9U0oDj41GjcqDuFe0-gzGzoHsz'
-            var APP_KEY = 'vt42FiDltVxEsHYopyyLvLDj'
-
-            AV.init({
-                appId: APP_ID,
-                appKey: APP_KEY
-            })
-        },
         init:function(view,model){
             this.view = view
             this.model = model
             this.leaveMessage = view.querySelector('#leaveMessage')
             this.messageList = view.querySelector('ul')
-            this.initAV()
+            this.model.init()
             this.messageInit()
             this.bindEvents()
         },
