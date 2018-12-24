@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="css/loading.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="//at.alicdn.com/t/font_882652_k7i5wzltj7.js"></script>
+  <!-- 存储服务 -->
+  <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.11.0/dist/av-min.js"></script>
 </head>
 
 <body>
@@ -159,6 +161,17 @@
       </div>
     </div>
   </section>
+  <section class='message'>
+    <h2>留言</h2>
+    <ul>
+      
+    </ul>
+    <form  method="post" id="leaveMessage">
+      昵称：<input type="text" name="name" id="">
+      留言：<input type="text" name="messages" id="">
+      <input type="submit" value="提交">
+    </form>
+  </section>
 
   <script src="js/tween.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
@@ -168,6 +181,7 @@
   <script src="js/topbar-hover.js"></script>
   <script src="js/auto-slide.js"></script>
   <script src="js/smoothy-nav.js"></script>
+  <script src="js/message.js"></script>
 </body>
 
 </html>
