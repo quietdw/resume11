@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>姜大伟的个人简历</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
@@ -137,7 +138,7 @@
   </section>
   <section id="sitePortfolio" class="portfolio">
     <h2>作品集</h2>
-    <div  id=slide-container>
+    <div id=slide-container>
       <!-- Slider main container -->
       <div class="swiper-container">
         <!-- Additional required wrapper -->
@@ -164,12 +165,17 @@
   <section class='message'>
     <h2>留言</h2>
     <ul>
-      
+
     </ul>
-    <form  method="post" id="leaveMessage">
-      昵称：<input type="text" name="name" id="">
-      留言：<input type="text" name="messages" id="">
-      <input type="submit" value="提交">
+    <form method="post" id="leaveMessage">
+      <div class='innerLeaveMessage'>
+        <span>昵称</span><input type="text" name="name" id="" autocomplete="off">
+      </div>
+      <div class='innerLeaveMessage'>
+        <span>留言</span><input type="text" name="messages" id="" autocomplete="off">
+      </div>
+
+      <input type="submit" value="提交" class="confirmBtn">
     </form>
   </section>
 
