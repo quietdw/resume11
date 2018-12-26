@@ -1,5 +1,5 @@
 !function () {
-    let view = document.querySelectorAll('.topNavBarInner>nav>ul>li>a')
+    let view = View('.topNavBarInner>nav>ul>li>a')
 
     let controller = {
         view:null,
@@ -14,7 +14,7 @@
                     let targetHeight = document.querySelector(e.target.getAttribute('href')).offsetTop
                     
                     let t = Math.abs((targetHeight - currentHeight) / 500)
-                    t > 2 ? t = 2 : t
+                    t > 1 ? t = 1 : t
                     var coords = {
                         y: currentHeight
                     }

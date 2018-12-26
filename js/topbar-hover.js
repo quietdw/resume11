@@ -1,6 +1,6 @@
 !function () {
-    let view = document.querySelectorAll('.topNavBarInner>nav>ul>li')
-
+    let view = View('.topNavBarInner>nav>ul>li')
+    
     var controller = {
         view:null,
         init:function(view){

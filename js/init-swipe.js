@@ -1,6 +1,6 @@
 !function () {
 
-    let view = document.querySelector('#slide-container')
+    let view = View('#slide-container')[0]
 
     let controller = {
         view: null,
