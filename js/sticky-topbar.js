@@ -10,9 +10,9 @@
 
         },
         bindEvents: function () {
-            let _this = this
-            window.addEventListener('scroll', function () {
-                (window.scrollY > 0) ? _this.active(): _this.unactive()
+            (window.scrollY > 0) ? this.active(): this.unactive()
+            window.addEventListener('scroll', () =>{
+                (window.scrollY > 0) ? this.active(): this.unactive()
             })
         },
         active: function () {
