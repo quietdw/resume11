@@ -11,7 +11,7 @@
                     e.preventDefault()
         
                     let currentHeight = window.scrollY
-                    let targetHeight = document.querySelector(e.target.getAttribute('href')).offsetTop
+                    let targetHeight = document.querySelector(e.target.getAttribute('href')).offsetTop -125
                     
                     let t = Math.abs((targetHeight - currentHeight) / 500)
                     t > 1 ? t = 1 : t
@@ -24,7 +24,7 @@
                         }, t * 1000)
                         .easing(TWEEN.Easing.Quadratic.Out)
                         .onUpdate(function () {
-                            window.scrollTo(0, coords.y - 125)
+                            window.scrollTo(0, coords.y)
                         })
                         .start();
                 }
