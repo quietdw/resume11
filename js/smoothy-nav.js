@@ -24,7 +24,7 @@
                         }, t * 1000)
                         .easing(TWEEN.Easing.Quadratic.Out)
                         .onUpdate(function () {
-                            window.scrollTo(0, coords.y - 75)
+                            window.scrollTo(0, coords.y - 125)
                         })
                         .start();
                 }

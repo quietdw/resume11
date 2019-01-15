@@ -45,14 +45,16 @@ a {
 
 #siteAbout,
 #siteSkills,
-#sitePortfolio {
+#sitePortfolio,
+#siteComment {
     transform: translateY(-50px);
     transition: all 0.5s;
 }
 
 #siteAbout.slideUp,
 #siteSkills.slideUp,
-#sitePortfolio.slideUp {
+#sitePortfolio.slideUp,
+#siteComment.slideUp {
     transform: translateY(0px);
 }
 
@@ -278,7 +280,7 @@ dd {
     display: inline-block;
     width: 30px;
     height: 30px;
-    border-radius: 20px;
+    border-radius: 50%;
     padding: 8px 6px 4px 6px;
     margin: 15px;
     transition: all ease-out 0.3s;
@@ -319,7 +321,8 @@ dd {
 }
 
 .skills,
-.portfolio {
+.portfolio,
+.message {
     max-width: 740px;
     margin: 0 auto;
     margin-top: 70px;
@@ -417,7 +420,6 @@ ol .progressBar {
 
 .message{
     max-width: 740px;
-    margin: 15px auto;
 }
 .message #leaveMessage .confirmBtn{
     color: #fff;
@@ -459,7 +461,7 @@ ol .progressBar {
 }
 
 .message>ul ,.message>form{
-    padding: 30px 70px;
+    padding: 0px 70px 30px 70px;
 }
 .message>ul>li{
     background: #fff;

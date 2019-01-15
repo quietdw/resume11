@@ -12,14 +12,14 @@
             this.bindEvent()
         },
         initATargs:function(){
-            for (let i = 0; i < 3; i++) {
+            for (let i = 0; i < 4; i++) {
                 let id = this.aTargs[i].getAttribute('href')
                 document.querySelector(id).classList.add('slideUp')
             }
         },
         findAndRemoveOffset:function(){
                 var minIndex = 0
-                for (let i = 0; i < 3; i++) {
+                for (let i = 0; i < 4; i++) {
                     let id = this.aTargs[i].getAttribute('href')
                     if (Math.abs(window.scrollY - document.querySelector(id).offsetTop) < Math.abs(window.scrollY - document.querySelector(this.aTargs[minIndex].getAttribute('href')).offsetTop)) {
                         minIndex = i
