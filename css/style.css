@@ -43,6 +43,10 @@ a {
     overflow: hidden;
 }
 
+#siteAbout {
+    margin-top: -350px;
+}
+
 #siteAbout,
 #siteSkills,
 #sitePortfolio,
@@ -112,6 +116,10 @@ a {
     padding: 7px 6px 1px 16px;
 }
 
+#topNavBar.sticky .menuBtn {
+    fill: #1A1A1A;
+}
+
 #topNavBar .topNavBarInner {
     padding: 7px 16px 1px 16px;
     transition: padding 0.5s;
@@ -123,7 +131,6 @@ a {
     padding: 0;
 }
 
-
 #topNavBar   .menuBtn {
     display: none;
     float: right;
@@ -131,21 +138,30 @@ a {
     fill: #fff;
     width: 24px;
     height: 24px;
+    margin-right: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 #topNavBar .smallSize {
-    display: none;
+    text-align: center;
+    color: #259;
+    position: absolute;
+    left: 0;
+    top:100%;
+    width: 50%;
+    transform: translateX(200%);
+    transition: all 0.3s cubic-bezier(0.5, 0, 0, 1);
+    border-bottom: solid #259 2px;
+    border-left: solid #259 2px;
+    background: #fff;
 }
-
-@media (max-width: 700px) {
-    #topNavBar   .menuBtn {
-        display: block;
-    }
-    #topNavBar .nomalSize{
-        display: none;
-    }
+#topNavBar .smallSize ul>li{
+    border-top: 1px solid #eee;
+    padding: 15px 0;
+    font-weight: bold;
 }
-
 
 #topNavBar .nomalSize>ul>li {
     margin: 0 17px;
@@ -224,13 +240,13 @@ a {
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
 
-.picAndText {
+.userCard .picAndText {
     padding: 30px;
     background: #fff;
     display: flex;
 }
 
-.userCard .pic {
+.userCard .picAndText .pic {
     float: left;
     flex: 1;
     padding: 20px;
@@ -301,6 +317,24 @@ a {
     }
 }
 
+@keyframes heartThrob {
+	10% {
+		transform: scale(1.04)
+	}
+
+	20% {
+		transform: scale(1)
+	}
+
+	40% {
+		transform: scale(1.04)
+	}
+
+	60% {
+		transform: scale(1)
+	}
+}
+
 .downloadResume-wapper a {
     display: inline-block;
     padding: 7px 12px;
@@ -308,15 +342,12 @@ a {
     border: 1px solid #0084FF;
     border-radius: 3px;
     transition: all 0.3s ease-out;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    animation: 1.5s heartThrob infinite;;
+    
 }
 
-.downloadResume-wapper a:hover {
-    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
-    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-}
+
 
 .userCard .text h1 {
     margin-top: 25px;
@@ -418,7 +449,7 @@ dd {
 .message {
     max-width: 740px;
     margin: 0 auto;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 .skills h2,
@@ -561,7 +592,7 @@ ol .progressBar {
 
 .message>ul,
 .message>form {
-    padding: 0px 70px 30px 70px;
+    padding: 0px 30px 30px 30px;
 }
 
 .message>ul>li {
@@ -575,4 +606,29 @@ ol .progressBar {
 .message>ul>li>span:nth-child(1) {
     font-size: 16px;
     color: #0084FF;
+}
+
+@media (max-width: 700px) {
+    #topNavBar .menuBtn {
+        display: block;
+    }
+    #topNavBar .nomalSize{
+        display: none;
+    }
+    #topNavBar .smallSize.active{
+        display: block;
+        transform: translateX(100%);
+        
+    }
+    .userCard .picAndText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .userCard .picAndText .pic {
+        width: 50%;
+    }
+    #siteAbout {
+        margin-top: -387px;
+    }
 }
