@@ -20,14 +20,18 @@ li {
 body {
     margin: 0;
     font-size: 14px;
-    color: #1A1A1A;
-    background: #f6f6f6;
+    color: #fff;
+    background: #0e141f;
 }
 
 a {
     color: inherit;
     text-decoration: none;
 }
+p,span{
+    color: #a89e8a;
+}
+
 
 .clearfix::after {
     content: '';
@@ -70,7 +74,7 @@ a {
 }
 
 #topNavBar .rs {
-    color: #0084FF;
+    color: #ffcb36;
 }
 
 #topNavBar .card {
@@ -102,22 +106,23 @@ a {
 }
 
 #topNavBar.sticky {
-    background: #fff;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.19), 0 6px 10px rgba(0, 0, 0, 0.23);
-    color: #1A1A1A;
+    background: #0e141f;
+    color: #fff;
     padding: 10px 0 10px 0;
+    box-shadow: 0 2px 10px -1px #000;
+    border-bottom: 1px solid #29303d;
 }
 
 #topNavBar.sticky .card {
-    color: #1A1A1A;
+    color: #fff;
 }
 
 #topNavBar.sticky .topNavBarInner {
     padding: 7px 6px 1px 16px;
 }
 
-#topNavBar.sticky .menuBtn {
-    fill: #1A1A1A;
+#topNavBar.sticky .menuBtn>div{
+    background: #1A1A1A;
 }
 
 #topNavBar .topNavBarInner {
@@ -131,37 +136,63 @@ a {
     padding: 0;
 }
 
-#topNavBar   .menuBtn {
+#topNavBar .menuBtn {
     display: none;
+    position: relative;
     float: right;
     cursor: pointer;
-    fill: #fff;
-    width: 24px;
-    height: 24px;
-    margin-right: 15px;
+    width: 26px;
+    height: 26px;
+    padding-top: 15px;
+    padding-right: 15px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
 }
+#topNavBar .menuBtn>div{
+    position: absolute;
+    width: 26px;
+    height: 2px;
+    background: #fff;
+}
+#topNavBar .menuBtn>div::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 26px;
+    height: 2px;
+    background-color: currentColor;
+}
+
+#topNavBar .menuBtn>div::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 26px;
+    height: 2px;
+    background-color: currentColor;
+}
 
 #topNavBar .smallSize {
     text-align: center;
-    color: #259;
+    color: #fff; 
     position: absolute;
     left: 0;
     top:100%;
-    width: 50%;
-    transform: translateX(200%);
+    width: 100%;
+    transform: translateX(100%);
     transition: all 0.3s cubic-bezier(0.5, 0, 0, 1);
-    border-bottom: solid #259 2px;
-    border-left: solid #259 2px;
-    background: #fff;
+    background: #ffcb36;
+    
 }
 #topNavBar .smallSize ul>li{
-    border-top: 1px solid #eee;
     padding: 15px 0;
     font-weight: bold;
+    border-bottom: #fff solid 1px;
 }
+
 
 #topNavBar .nomalSize>ul>li {
     margin: 0 17px;
@@ -176,7 +207,7 @@ a {
     position: absolute;
     top: 100%;
     width: 0%;
-    background: #0084FF;
+    background: #ffcb36;
     height: 3px;
     transition: all ease-out 0.3s;
 }
@@ -219,7 +250,7 @@ a {
 }
 
 #topNavBar .nomalSize>ul>li.active>.submenu li:hover {
-    color: #0084FF;
+    color: #ffcb36;
     background: rgb(250, 250, 250);
 }
 
@@ -231,18 +262,20 @@ a {
 
 .banner .cover {
     height: 515px;
-    background: rgba(0, 60, 116, 0.62);
+    background: rgba(14, 20, 31, 0.62);
 }
 
 .userCard {
     max-width: 940px;
     margin: 0 auto;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 10px -1px #000;
+    border: 1px solid #29303d;
 }
 
 .userCard .picAndText {
     padding: 30px;
-    background: #fff;
+    background: #0e141f;
+    border-bottom: 1px solid #29303d;
     display: flex;
 }
 
@@ -270,12 +303,12 @@ a {
 
 .userCard .text span {
     display: inline-block;
-    border-radius: 3px;
-    background: #0084FF;
-    color: #fff;
+    background: #131d31;
+    color: #ffcb36;
     padding: 7px 12px;
     font-weight: bold;
     position: relative;
+    border: solid #ffcb36 1PX;
 }
 
 .userCard .text span::after {
@@ -284,8 +317,8 @@ a {
     left: 5px;
     top: 100%;
     border: 5px solid transparent;
-    border-left-color: #0084FF;
-    border-top-color: #0084FF;
+    border-left-color: #ffcb36;
+    border-top-color: #ffcb36;
 }
 
 .userCard .downloadContainer {
@@ -338,8 +371,8 @@ a {
 .downloadResume-wapper a {
     display: inline-block;
     padding: 7px 12px;
-    color: #0084FF;
-    border: 1px solid #0084FF;
+    color: #ffcb36;
+    border: 1px solid #ffcb36;
     border-radius: 3px;
     transition: all 0.3s ease-out;
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -357,7 +390,7 @@ a {
 .userCard .text hr {
     margin: 22px 0;
     border: 0;
-    border-top: 1px solid #DEDEDE;
+    border-top: 1px solid #29303d;
 }
 
 .userCard .text>.basicInfo {
@@ -397,10 +430,11 @@ dd {
 
 .userCard .pic img {
     width: 100%;
+    box-shadow: 0 2px 10px -1px #000;
 }
 
 .media {
-    background: #0084FF;
+    background: #0e141f;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -420,13 +454,13 @@ dd {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    margin: 10px;
+    margin: 15px;
     transition: all ease-out 0.3s;
     border: solid transparent 1px;
 }
 
 .media a:hover {
-    border: solid #fff 1px;
+    border: solid #ffcb36 1px;
     animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
@@ -546,13 +580,21 @@ ol .progressBar {
     max-width: 740px;
 }
 
+.message .userName{
+    width: 100px;
+
+}
+.message .userMessage{
+    width: 40%;
+    flex:0.7;
+}
 .message #leaveMessage .confirmBtn {
     color: #fff;
     width: 100px;
     height: 40px;
     border: 0px;
     border-radius: 3px;
-    background-color: #0084FF;
+    background-color: #ffcb36;
     cursor: pointer;
     transition: all 0.3s ease-out;
 }
@@ -576,14 +618,16 @@ ol .progressBar {
     position: absolute;
     bottom: 100%;
     color: #1A1A1A;
-
+    font-weight: bold;
     font-size: 16px;
 }
 
-.message>form .innerLeaveMessage input {
+.message>form .innerLeaveMessage>input {
     border: 0px;
     border-bottom: 1px solid #1A1A1A;
     background: transparent;
+    line-height: 24px;
+    width: 100%;
 }
 
 .message>form input:focus {
@@ -592,20 +636,21 @@ ol .progressBar {
 
 .message>ul,
 .message>form {
-    padding: 0px 30px 30px 30px;
+    padding: 15px 30px 30px 30px;
 }
 
 .message>ul>li {
-    background: #fff;
+    background: #0e141f;
     padding: 10px 20px;
+    border: 1px solid #29303d;
     border-radius: 5px;
     margin-bottom: 10px;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 10px -1px #000;
 }
 
 .message>ul>li>span:nth-child(1) {
     font-size: 16px;
-    color: #0084FF;
+    color: #ffcb36;
 }
 
 @media (max-width: 700px) {
@@ -617,7 +662,7 @@ ol .progressBar {
     }
     #topNavBar .smallSize.active{
         display: block;
-        transform: translateX(100%);
+        transform: translateX(300%);
         
     }
     .userCard .picAndText {
@@ -630,5 +675,82 @@ ol .progressBar {
     }
     #siteAbout {
         margin-top: -387px;
+    }
+}
+
+@media (max-width: 700px) {
+    #topNavBar .menuBtn {
+        display: block;
+    }
+    #topNavBar .nomalSize{
+        display: none;
+    }
+    #topNavBar .smallSize.active{
+        display: block;
+        transform: translateX(0%);
+        
+    }
+    .userCard .picAndText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .userCard .picAndText .pic {
+        width: 50%;
+
+        overflow: hidden;
+    }
+    .userCard .picAndText .pic img {
+        border-radius: 50%;
+        border: #ffcb36 solid 1px;
+    }
+
+    #siteAbout {
+        margin-top: -376px;
+    }
+}
+
+@media (max-width: 500px) {
+    .userCard .downloadContainer {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .userCard .text {
+        padding-top: 0px;
+    }
+
+    .userCard .downloadContainer .downloadResume-wapper{
+        margin-bottom: 30px;
+        margin-top: 8px;
+    }
+    .userCard .basicInfo {
+        flex-direction: column;
+    }
+    .userCard .basicInfo .QRCode{
+        align-self: center;
+        width: 50%;
+    }
+    .userCard .text h1{
+        text-align: center;
+    }
+    .userCard .text span::after{
+        left: 38%;
+    }
+    .message>form{
+        flex-direction: column;
+    }
+    .message>form .innerLeaveMessage {
+        display: flex;
+        position: relative;
+        margin-bottom: 40px;
+        flex: 1;
+    }
+    .message .userMessage {
+        width: 100%;
+    }
+    .message>form .innerLeaveMessage>input {
+        padding: 10px 0;
+       
     }
 }
