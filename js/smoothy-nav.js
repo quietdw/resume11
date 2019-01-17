@@ -1,18 +1,18 @@
-!function () {
+! function () {
     let view = View('.topNavBarInner>nav>ul>li>a')
 
     let controller = {
-        view:null,
-        init:function(view){
+        view: null,
+        init: function (view) {
             this.view = view
             this.initAnimate()
-            for (let i = 0; i < this.view.length; i++) {
+            for (let i = 0; i < 4; i++) {
                 this.view[i].onclick = function (e) {
                     e.preventDefault()
-        
+
                     let currentHeight = window.scrollY
-                    let targetHeight = document.querySelector(e.target.getAttribute('href')).offsetTop -125
-                    
+                    let targetHeight = document.querySelector(e.target.getAttribute('href')).offsetTop - 125
+
                     let t = Math.abs((targetHeight - currentHeight) / 500)
                     t > 1 ? t = 1 : t
                     var coords = {
@@ -30,7 +30,7 @@
                 }
             }
         },
-        initAnimate:function(){
+        initAnimate: function () {
             function animate(time) {
                 requestAnimationFrame(animate);
                 TWEEN.update(time);
@@ -39,7 +39,7 @@
         }
     }
 
-    controller.init.call(controller,view)
+    controller.init.call(controller, view)
 
 
 }.call()

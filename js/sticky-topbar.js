@@ -6,11 +6,13 @@
         view: null,
         menuBtn: null,
         smallSizeNav:null,
+        closeBtn:null,
         clickflag:true,
         init: function (view) {
             this.view = view
             this.menuBtn = this.view.querySelector('.menuBtn')
             this.smallSizeNav = this.view.querySelector('.smallSize')
+            this.closeBtn = this.view.querySelector('.closeBtn')
             this.bindEvents()
             
         },
@@ -28,7 +30,11 @@
                     this.clickflag = !this.clickflag
                 }
             })
-            
+
+            this.closeBtn.addEventListener('click',()=>{
+                this.hideSmallSizeNav()
+                this.clickflag = !this.clickflag
+            })
         },
         active: function () {
             this.view.classList.add('sticky')
