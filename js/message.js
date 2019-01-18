@@ -28,7 +28,7 @@
                         oLi.appendChild(ospanname)
                         oLi.appendChild(ospanmessage)
     
-                        this.messageList.appendChild(oLi)
+                        this.messageList.prepend(oLi)
                        
                     });
                 })
