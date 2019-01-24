@@ -308,7 +308,7 @@ p>span {
 }
 
 .userCard .picAndText {
-    padding: 25px 25px 5px 25px;
+    padding: 25px 25px 25px 25px;
     background: #0e141f;
     display: flex;
 }
@@ -316,7 +316,9 @@ p>span {
 .userCard .picAndText .pic {
     float: left;
     display: flex;
-    flex: 1;
+   justify-content: center;
+   flex-direction: column;
+    width: 260px;
     padding: 10px;
 }
 
@@ -326,7 +328,7 @@ p>span {
 
 .userCard .text {
     float: left;
-    flex: 2;
+    flex: 1;
     padding: 10px;
     margin-left: 20px;
 }
@@ -468,7 +470,9 @@ dd {
     display: block;
     width: 100%;
     box-shadow: 0px 10px 50px -5px #000;
+    border-radius: 50%;
 }
+
 
 .media {
     background: #0e141f;
@@ -476,10 +480,12 @@ dd {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .media div {
     display: flex;
+    padding-top: 25px;
     justify-content: center;
     align-items: center;
 }
@@ -657,7 +663,6 @@ dd {
     }
     .userCard .picAndText .pic img {
         width: 75%;
-        border-radius: 10%;
         display: block;
         margin: 0 auto;
     }
