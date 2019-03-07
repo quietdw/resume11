@@ -517,7 +517,7 @@ dd {
 .skills,
 .portfolio,
 .message {
-    max-width: 740px;
+    max-width: 940px;
     margin: 0 auto;
     margin-top: 50px;
 }
@@ -538,7 +538,7 @@ dd {
 .portfolio>.portfolioContainer>.portfolioItem>div>.portfolioInfo{position: absolute;left: 0;width: 100%;bottom: -50%;opacity: 0;
     transition: all cubic-bezier(0.5, 0, 0, 1) 0.3s;}
 .portfolio>.portfolioContainer>.portfolioItem>div>.portfolioInfo.active{bottom: 0px;top:auto;opacity: 1;}
-.portfolio>.portfolioContainer>.portfolioItem>div>.portfolioInfo>div{cursor: pointer;background: #131d31;margin: 15px;padding: 10px;
+.portfolio>.portfolioContainer>.portfolioItem>div>.portfolioInfo>div{background: #131d31;margin: 15px;padding: 10px;
     border-top: #ffcb36 solid 4px;}
 .portfolio>.portfolioContainer>.portfolioItem>div>.portfolioInfo>div>p{}
 
@@ -546,9 +546,19 @@ dd {
 .skills {
 
 }
+.skills>ol{
+    padding: 0 5%;
+    color:#a89e8a
+}
 
+.skills>ol>li{
+    line-height: 120%;
+    margin-top:10px;
+    padding: 6px 2px 6px 16px;
+    border-left: solid 3px #ffcb36;
+}
 .message {
-    max-width: 740px;
+    max-width: 940px;
 }
 
 .message .userName {
