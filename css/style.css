@@ -566,7 +566,6 @@ dd {
     position: absolute;
     opacity: 0;
     visibility: hidden;
-    ;
     background: #131d31;
     border: 1px solid #29303d;
     bottom: 100%;
@@ -585,12 +584,11 @@ dd {
     position: absolute;
     width: 0;
     height: 0;
-    border: solid 10px transparent;
-    border-top: solid 10px #131d31;
-    border-left: solid 10px #131d31;
+    border: solid 8px transparent;
+    border-top: solid 8px #131d31;
+    border-left: solid 8px #131d31;
     left: 30%;
     top: 100%;
-    z-index: 0;
 }
 
 .portfolio>.portfolioContainer>.portfolioItem>div>.portfolioInfo.active>div>p:nth-child(3) {
