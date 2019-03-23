@@ -24,7 +24,7 @@ body {
     background: #0e141f;
 }
 
-html{
+html {
     background: #0e141f;
 }
 
@@ -85,7 +85,7 @@ p>span {
 }
 
 #topNavBar {
-   display: none;
+    display: none;
 }
 
 .banner {
@@ -102,7 +102,7 @@ p>span {
 .userCard {
     max-width: 940px;
     margin: 0 auto;
-    box-shadow:0px 10px 50px -5px #000;
+    box-shadow: 0px 10px 50px -5px #000;
 }
 
 .userCard .picAndText {
@@ -114,8 +114,8 @@ p>span {
 .userCard .picAndText .pic {
     float: left;
     display: flex;
-   justify-content: center;
-   flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
     width: 260px;
     padding: 10px;
 }
@@ -267,7 +267,7 @@ dd {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .media div {
@@ -318,42 +318,91 @@ dd {
     text-align: center;
 }
 
-.portfolio {max-width: 940px;padding:0 20px;box-sizing: border-box;}
-.portfolio>.portfolioContainer>.portfolioItem {width: 33.333333%;padding: 15px;float: left;box-sizing: border-box;margin-bottom: 18px;margin-top: 5px;}
-.portfolio>.portfolioContainer>.portfolioItem:nth-child(2){margin-bottom: 18px;margin-top: 5px;}
-.portfolio>.portfolioContainer>.portfolioItem:nth-child(3){}
-.portfolio>.portfolioContainer>.portfolioItem:nth-child(4){margin-top: -17px}
-.portfolio>.portfolioContainer>.portfolioItem:nth-child(5){margin-top: -280px;}
-.portfolio>.portfolioContainer>.portfolioItem:nth-child(6){margin-top: -226px;}
-.portfolio>.portfolioContainer>.portfolioItem>div{box-shadow: 0px 10px 50px -5px #000;border: solid #131d31 1px;position: relative;}
-.portfolio>.portfolioContainer>.portfolioItem>div>img{width: 100%;vertical-align: top;}
-.portfolio>.portfolioContainer>.portfolioItem>div>.portfolioInfo{position: initial;left: 0;width: 100%;bottom: -50%;opacity: 1;
-    transition: all cubic-bezier(0.5, 0, 0, 1) 0.3s;}
-.portfolio>.portfolioContainer>.portfolioItem>div>.portfolioInfo.active{bottom: 0px;top:auto;opacity: 1;}
-.portfolio>.portfolioContainer>.portfolioItem>div>.portfolioInfo>div{background: #131d31;margin: 0;padding: 10px;border-top: #ffcb36 solid 4px;height: 205px;}
-.portfolio>.portfolioContainer>.portfolioItem:nth-child(2)>div>.portfolioInfo>div{height: 260px;}
-.portfolio>.portfolioContainer>.portfolioItem:nth-child(3)>div>.portfolioInfo>div{height: 150px;}
-.portfolio>.portfolioContainer>.portfolioItem:nth-child(4)>div>.portfolioInfo>div{height: 113px;}
-.portfolio>.portfolioContainer>.portfolioItem:nth-child(5)>div>.portfolioInfo>div{height: 148px;}
-.portfolio>.portfolioContainer>.portfolioItem:nth-child(6)>div>.portfolioInfo>div{height: 148px;}
-
-.skills>ol{
-    padding: 0 5%;
-    color:#a89e8a
+.portfolio {
+    max-width: 940px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
-.skills>ol>li{
+.portfolio>.portfolioContainer>.portfolioItem {
+    width: 100%;
+    padding: 15px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.portfolio>.portfolioContainer>.portfolioItem>div {
+    display: flex;
+    box-shadow: 0px 10px 50px -5px #000;
+    border: solid #29303d 1px;
+    position: relative;
+}
+
+.portfolio>.portfolioContainer>.portfolioItem>div>img {
+    width: 313px;
+    height: 178px;
+    vertical-align: top;
+}
+
+.portfolio>.portfolioContainer>.portfolioItem>div>.portfolioInfo {
+    width: 100%;
+    flex: 1;
+    opacity: 1;
+    transition: all cubic-bezier(0.5, 0, 0, 1) 0.3s;
+}
+
+.portfolio>.portfolioContainer>.portfolioItem>div>.portfolioInfo.active {
+    bottom: 0px;
+    top: auto;
+    opacity: 1;
+}
+
+.portfolio>.portfolioContainer>.portfolioItem>div>.portfolioInfo>div {
+    box-sizing: border-box;
+    height: 100%;
+    background: #131d31;
+    margin: 0;
+    padding: 10px;
+}
+
+.portfolio>.portfolioContainer>.portfolioItem>div>.portfolioInfo>div>h4 {
+    font-weight: bold;
+    color: #a89e8a;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.portfolio>.portfolioContainer>.portfolioItem>div>.portfolioInfo>div>p:nth-child(2) {
+    margin-bottom: 5px;
+
+}
+
+.portfolio>.portfolioContainer>.portfolioItem>div>.portfolioInfo>div>h4>span>a {
+    color: #ffcb36;
+    font-size: 14px
+}
+
+.skills>ol {
+    padding: 0 5%;
+    color: #a89e8a
+}
+
+.skills>ol>li {
     line-height: 120%;
-    margin-top:10px;
+    margin-top: 10px;
     padding: 6px 2px 6px 16px;
     border-left: solid 2px #ffcb36;
 }
-.skills>ol>li>span{color: #ffcb36;}
+
+.skills>ol>li>span {
+    color: #ffcb36;
+}
+
 .message {
     display: none;
 }
 
-.copyright  {
+.copyright {
     display: none;
 
 }
