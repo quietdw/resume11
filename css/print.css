@@ -58,7 +58,8 @@ p>span {
 }
 
 #siteAbout {
-    margin-top: -390px;
+    margin-top: -446px;
+    margin-bottom: 15px;
 }
 
 #siteAbout,
@@ -89,7 +90,6 @@ p>span {
 }
 
 .banner {
-    background: url(../img/bg.jpg);
     background-position: center center;
     background-size: cover;
 }
@@ -307,26 +307,25 @@ dd {
 .message {
     max-width: 940px;
     margin: 0 auto;
-    margin-top: 35px;
 }
 
 .skills h2,
 .portfolio h2,
 .message h2 {
     font-weight: bold;
-    margin-bottom: 24px;
     text-align: center;
 }
 
 .portfolio {
     max-width: 940px;
     padding: 0 20px;
+    padding-bottom: 15px;
     box-sizing: border-box;
 }
 
 .portfolio>.portfolioContainer>.portfolioItem {
     width: 100%;
-    padding: 15px;
+    padding: 15px 10px 0 10px;
     float: left;
     box-sizing: border-box;
 }
@@ -384,13 +383,14 @@ dd {
 
 .skills>ol {
     padding: 0 5%;
+    padding-top: 8px;
     color: #a89e8a
 }
 
 .skills>ol>li {
     line-height: 120%;
-    margin-top: 10px;
-    padding: 6px 2px 6px 16px;
+    padding: 7px;
+    padding-left: 14px;
     border-left: solid 2px #ffcb36;
 }
 
