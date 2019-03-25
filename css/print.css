@@ -100,24 +100,23 @@ p>span {
 }
 
 .userCard {
-    max-width: 940px;
+    max-width: 794px;
     margin: 0 auto;
     box-shadow: 0px 10px 50px -5px #000;
 }
 
 .userCard .picAndText {
-    padding: 25px 25px 25px 25px;
+    padding: 15px;
     background: #0e141f;
     display: flex;
 }
 
 .userCard .picAndText .pic {
-    float: left;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 260px;
+    position: absolute;
+    width: 110px;
+    height: 110px;
     padding: 10px;
+    right: 24%;
 }
 
 .userCard .pic img {
@@ -214,7 +213,7 @@ p>span {
 }
 
 .userCard .text hr {
-    margin: 22px 0;
+    margin: 5px 0;
     border: 0;
     border-top: 1px solid #29303d;
 }
@@ -235,22 +234,22 @@ p>span {
 }
 
 .userCard .text>.basicInfo>.QRCode img {
-    width: 100%;
+    width: 70px;
 }
 
 .userCard .text dt,
 dd {
     float: left;
-    line-height: 32px;
+    line-height: 28px;
 }
 
 .userCard .text dt {
-    width: 25%;
+    width: 40%;
     font-weight: bold;
 }
 
 .userCard .text dd {
-    width: 75%;
+    width: 60%;
     color: #a89e8a;
 }
 
@@ -261,14 +260,7 @@ dd {
 }
 
 
-.media {
-    background: #0e141f;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
+.media {}
 
 .media div {
     display: flex;
@@ -305,7 +297,7 @@ dd {
 .skills,
 .portfolio,
 .message {
-    max-width: 940px;
+    max-width: 794px;
     margin: 0 auto;
 }
 
@@ -317,8 +309,8 @@ dd {
 }
 
 .portfolio {
-    max-width: 940px;
-    padding: 0 20px;
+    max-width: 794px;
+
     padding-bottom: 15px;
     box-sizing: border-box;
 }
@@ -330,16 +322,21 @@ dd {
     box-sizing: border-box;
 }
 
+.portfolio>.portfolioContainer>.portfolioItem:nth-child(6) {
+    display: none;
+}
+
 .portfolio>.portfolioContainer>.portfolioItem>div {
     display: flex;
+    background: #131d31;
     box-shadow: 0px 10px 50px -5px #000;
     border: solid #29303d 1px;
     position: relative;
 }
 
 .portfolio>.portfolioContainer>.portfolioItem>div>img {
-    width: 313px;
-    height: 178px;
+    align-self: center;
+    width: 230px;
     vertical-align: top;
 }
 
@@ -359,7 +356,7 @@ dd {
 .portfolio>.portfolioContainer>.portfolioItem>div>.portfolioInfo>div {
     box-sizing: border-box;
     height: 100%;
-    background: #131d31;
+
     margin: 0;
     padding: 10px;
 }
