@@ -628,7 +628,6 @@ dd {
 
 .skills>ol>li {
     line-height: 120%;
-    margin-top: 10px;
     padding: 6px 2px 6px 16px;
     border-left: solid 3px #ffcb36;
 }
@@ -726,7 +725,7 @@ dd {
     color: #555;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     #topNavBar .menuBtn {
         display: block;
     }
@@ -780,6 +779,27 @@ dd {
         margin: 0;
     }
 
+    .portfolio>.portfolioContainer>.portfolioItem>div>.portfolioInfo>div>p:nth-child(3) {
+        position: initial;
+        opacity: 1;
+        visibility: visible;
+        background: transparent;
+        border: 0;
+
+        padding: 0px;
+        border-radius: 0px;
+        z-index: 1;
+        width: 100%;
+        transition: all cubic-bezier(0.5, 0, 0, 1) .2s;
+    }
+
+    .portfolio>.portfolioContainer>.portfolioItem>div>.portfolioInfo>div>p:nth-child(3)::after {
+        content: '';
+        position: initial;
+        width: 0;
+        height: 0;
+        border: 0;
+    }
 }
 
 @media (max-width: 500px) {
