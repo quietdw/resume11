@@ -21,11 +21,11 @@ body {
     margin: 0;
     font-size: 14px;
     color: #fff;
-    background: #0e141f;
+    /* background: #0e141f; */
 }
 
 html {
-    background: #0e141f;
+    /* background: #0e141f; */
 }
 
 a {
@@ -35,7 +35,7 @@ a {
 
 p,
 span {
-    color: #a89e8a;
+    color: #0e141f;
 }
 
 p>span {
@@ -96,18 +96,18 @@ p>span {
 
 .banner .cover {
     height: 515px;
-    background: rgba(14, 20, 31, 0.62);
+    /* backgroundbackground: rgba(14, 20, 31, 0.62); */
 }
 
 .userCard {
     max-width: 794px;
     margin: 0 auto;
-    box-shadow: 0px 10px 50px -5px #000;
+    /* box-shadow: 0px 10px 50px -5px #000; */
 }
 
 .userCard .picAndText {
     padding: 15px;
-    background: #0e141f;
+    /* background: #0e141f; */
     display: flex;
 }
 
@@ -127,7 +127,6 @@ p>span {
     float: left;
     flex: 1;
     padding: 10px;
-    margin-left: 20px;
 }
 
 .userCard .text>p {
@@ -137,12 +136,12 @@ p>span {
 
 .userCard .text .tips {
     display: inline-block;
-    background: #131d31;
-    color: #ffcb36;
+    /* background: #131d31; */
+    color: #0e141f;
     padding: 7px 12px;
     font-weight: bold;
     position: relative;
-    border: solid #ffcb36 1PX;
+    border: solid #0e141f 1PX;
 }
 
 .userCard .text .tips::after {
@@ -151,8 +150,8 @@ p>span {
     left: 5px;
     top: 100%;
     border: 5px solid transparent;
-    border-left-color: #ffcb36;
-    border-top-color: #ffcb36;
+    border-left-color: #0e141f;
+    border-top-color: #0e141f;
 }
 
 .userCard .downloadContainer {
@@ -210,10 +209,11 @@ p>span {
 .userCard .text h1 {
     margin-top: 25px;
     font-weight: bold;
+    color: #0e141f;
 }
 
 .userCard .text hr {
-    margin: 5px 0;
+    margin: 5px -11px 5px -11px;
     border: 0;
     border-top: 1px solid #29303d;
 }
@@ -246,11 +246,12 @@ dd {
 .userCard .text dt {
     width: 40%;
     font-weight: bold;
+    color: #0e141f;
 }
 
 .userCard .text dd {
     width: 60%;
-    color: #a89e8a;
+    color: #0e141f;
 }
 
 .userCard .pic img {
@@ -306,6 +307,7 @@ dd {
 .message h2 {
     font-weight: bold;
     text-align: center;
+    color: #0e141f;
 }
 
 .portfolio {
@@ -328,8 +330,8 @@ dd {
 
 .portfolio>.portfolioContainer>.portfolioItem>div {
     display: flex;
-    background: #131d31;
-    box-shadow: 0px 10px 50px -5px #000;
+    /* background: #131d31; */
+    /* box-shadow: 0px 10px 50px -5px #000; */
     border: solid #29303d 1px;
     position: relative;
 }
@@ -345,6 +347,7 @@ dd {
     flex: 1;
     opacity: 1;
     transition: all cubic-bezier(0.5, 0, 0, 1) 0.3s;
+    border-left: #0e141f solid 1px;
 }
 
 .portfolio>.portfolioContainer>.portfolioItem>div>.portfolioInfo.active {
@@ -363,7 +366,7 @@ dd {
 
 .portfolio>.portfolioContainer>.portfolioItem>div>.portfolioInfo>div>h4 {
     font-weight: bold;
-    color: #a89e8a;
+    color: #0e141f;
     font-size: 16px;
     margin-bottom: 5px;
 }
@@ -381,7 +384,7 @@ dd {
 .skills>ol {
     padding: 0 5%;
     padding-top: 8px;
-    color: #a89e8a
+    color: #0e141f
 }
 
 .skills>ol>li {
