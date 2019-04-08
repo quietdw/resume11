@@ -1,5 +1,5 @@
 * {
-    font-family: Tahoma, Helvetica, Arial, "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", sans-serif;
+    font-family: Tahoma, Helvetica, Arial, STXihei, "华文细黑", sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -21,11 +21,8 @@ body {
     margin: 0;
     font-size: 14px;
     color: #fff;
-    /* background: #0e141f; */
-}
-
-html {
-    /* background: #0e141f; */
+    display: grid;
+    padding: 5%;
 }
 
 a {
@@ -39,7 +36,7 @@ span {
 }
 
 p>span {
-    color: #ffcb36;
+    color: #f68f26;
     font-weight: bold;
 }
 
@@ -57,16 +54,10 @@ p>span {
     overflow: hidden;
 }
 
-#siteAbout {
-    margin-top: -446px;
-    margin-bottom: 15px;
-}
-
 #siteAbout,
 #siteSkills,
 #sitePortfolio,
 #siteComment {
-    transform: translateY(-50px);
     transition: all 0.5s;
 }
 
@@ -77,46 +68,38 @@ p>span {
     transform: translateY(0px);
 }
 
-#topNavBar .logo {
-    float: left;
-    font-size: 24px;
-    font-weight: bold;
-    padding-top: 1px;
-    margin-left: 5%;
-}
-
 #topNavBar {
     display: none;
 }
 
 .banner {
-    background-position: center center;
-    background-size: cover;
+    display: none;
 }
 
-.banner .cover {
-    height: 515px;
-    /* backgroundbackground: rgba(14, 20, 31, 0.62); */
-}
 
 .userCard {
-    max-width: 794px;
+    max-width: 1150px;
+
+    position: relative;
     margin: 0 auto;
     /* box-shadow: 0px 10px 50px -5px #000; */
 }
 
+
 .userCard .picAndText {
-    padding: 15px;
+    height: 320px;
     /* background: #0e141f; */
     display: flex;
 }
 
 .userCard .picAndText .pic {
     position: absolute;
+    top: 10px;
     width: 110px;
     height: 110px;
     padding: 10px;
-    right: 24%;
+    left: 50%;
+    transform: translateX(-50%)
 }
 
 .userCard .pic img {
@@ -126,16 +109,20 @@ p>span {
 .userCard .text {
     float: left;
     flex: 1;
-    padding: 10px;
 }
 
 .userCard .text>p {
     font-size: 16px;
+    text-align: center;
     line-height: 40px;
+    margin-bottom: 10px;
+    margin-left: -60px;
+    margin-right: -60px;
+    border-bottom: #0e141f solid 1px;
 }
 
 .userCard .text .tips {
-    display: inline-block;
+    display: none;
     /* background: #131d31; */
     color: #0e141f;
     padding: 7px 12px;
@@ -207,30 +194,34 @@ p>span {
 }
 
 .userCard .text h1 {
-    margin-top: 25px;
+    margin-top: 140px;
+    text-align: center;
     font-weight: bold;
     color: #0e141f;
 }
 
 .userCard .text hr {
+    display: none;
     margin: 5px -11px 5px -11px;
     border: 0;
     border-top: 1px solid #29303d;
 }
 
 .userCard .text>.basicInfo {
+    position: absolute;
     display: flex;
+    padding-left: 10px;
 }
 
 .userCard .text>.basicInfo>dl {
-    flex: 3;
+    flex: 6;
 }
 
 .userCard .text>.basicInfo>.QRCode {
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .userCard .text>.basicInfo>.QRCode img {
@@ -244,13 +235,13 @@ dd {
 }
 
 .userCard .text dt {
-    width: 40%;
+    width: 15%;
     font-weight: bold;
     color: #0e141f;
 }
 
 .userCard .text dd {
-    width: 60%;
+    width: 35%;
     color: #0e141f;
 }
 
@@ -260,9 +251,6 @@ dd {
     border-radius: 50%;
 }
 
-
-.media {}
-
 .media div {
     display: flex;
     padding-top: 25px;
@@ -271,19 +259,21 @@ dd {
 }
 
 .media div a {
+    position: absolute;
+    top: 100%;
+    right: -10%;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    margin: 10px;
     transition: all ease-out 0.3s;
     border: solid transparent 1px;
 }
 
 .media a:hover {
-    border: solid #ffcb36 1px;
+    border: solid #f68f26 1px;
     animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
@@ -291,35 +281,24 @@ dd {
 }
 
 .media svg {
-    width: 20px;
-    height: 20px;
-}
-
-.skills,
-.portfolio,
-.message {
-    max-width: 794px;
-    margin: 0 auto;
+    width: 2em;
+    height: 2em;
+    fill: #0e141f;
 }
 
 .skills h2,
 .portfolio h2,
 .message h2 {
     font-weight: bold;
-    text-align: center;
     color: #0e141f;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
-.portfolio {
-    max-width: 794px;
-
-    padding-bottom: 15px;
-    box-sizing: border-box;
-}
 
 .portfolio>.portfolioContainer>.portfolioItem {
     width: 100%;
-    padding: 15px 10px 0 10px;
     float: left;
     box-sizing: border-box;
 }
@@ -332,15 +311,19 @@ dd {
     display: flex;
     /* background: #131d31; */
     /* box-shadow: 0px 10px 50px -5px #000; */
-    border: solid #29303d 1px;
+    /* border: solid #29303d 1px; */
+    min-height: 145px;
     position: relative;
 }
 
 .portfolio>.portfolioContainer>.portfolioItem>div>img {
-    align-self: center;
+    align-self: flex-start;
+    margin: 10px 20px 10px 10px;
     width: 230px;
     vertical-align: top;
+    box-shadow: 0 1px 1px #0e141f1f;
 }
+
 
 .portfolio>.portfolioContainer>.portfolioItem>div>.portfolioInfo {
     width: 100%;
@@ -361,7 +344,7 @@ dd {
     height: 100%;
 
     margin: 0;
-    padding: 10px;
+    padding: 10px 10px 10px 20px;
 }
 
 .portfolio>.portfolioContainer>.portfolioItem>div>.portfolioInfo>div>h4 {
@@ -377,25 +360,23 @@ dd {
 }
 
 .portfolio>.portfolioContainer>.portfolioItem>div>.portfolioInfo>div>h4>span>a {
-    color: #ffcb36;
+    color: #f68f26;
     font-size: 14px
 }
 
 .skills>ol {
-    padding: 0 5%;
-    padding-top: 8px;
-    color: #0e141f
+    color: #0e141f;
+    margin-left: 10px;
 }
 
 .skills>ol>li {
     line-height: 120%;
     padding: 7px;
-    padding-left: 14px;
-    border-left: solid 2px #ffcb36;
+    padding-left: 0px;
 }
 
 .skills>ol>li>span {
-    color: #ffcb36;
+    color: #f68f26;
 }
 
 .message {
