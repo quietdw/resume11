@@ -22,7 +22,6 @@ body {
     font-size: 14px;
     color: #fff;
     display: grid;
-    padding: 5%;
 }
 
 a {
@@ -87,7 +86,7 @@ p>span {
 
 
 .userCard .picAndText {
-    height: 320px;
+    height: 400px;
     /* background: #0e141f; */
     display: flex;
 }
@@ -113,12 +112,11 @@ p>span {
 
 .userCard .text>p {
     font-size: 16px;
-    text-align: center;
-    line-height: 40px;
+    line-height: 36px;
     margin-bottom: 10px;
-    margin-left: -60px;
-    margin-right: -60px;
+    padding-bottom: 10px;
     border-bottom: #0e141f solid 1px;
+    text-indent: 2em;
 }
 
 .userCard .text .tips {
@@ -195,6 +193,7 @@ p>span {
 
 .userCard .text h1 {
     margin-top: 140px;
+    margin-bottom: 10px;
     text-align: center;
     font-weight: bold;
     color: #0e141f;
